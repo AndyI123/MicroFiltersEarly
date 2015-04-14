@@ -1,0 +1,99 @@
+<style type="text/css">
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: HelveticaNeue-UltraLight, Arial, Helvetica;
+}
+
+input[type=text] label:before{
+    content: "";
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    box-shadow: none;
+}
+
+#sub, #train{
+    background-color: #55ACEE;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    color: #FFF;
+    font-family: HelveticaNeue-UltraLight, Roboto, Helvetica, Arial;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px;
+}
+
+#sub:hover{
+    background-color: #72A1EE;
+}
+
+input[type=text]{
+    background-color: #BBB;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    color: #FFF;
+    font-family: HelveticaNeue-UltraLight, Roboto, Helvetica, Arial;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px;
+}
+
+input[type=text]:focus{
+    background-color: #DDD;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    color: #000;
+    font-family: HelveticaNeue-UltraLight, Roboto, Helvetica, Arial;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px;
+}
+
+ body{
+    background-color: #55ACEE;
+ }
+
+  #bigDiv{
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #FFF;
+ }
+
+</style>
+<html>
+<head><title>Download File</title></head>
+<body>
+<div id="bigDiv">
+<form onsubmit="downloadFile()">
+    <input type="text" id="fileName" placeholder="Download Code"></input>
+    <input type="submit" id="sub"></input>
+</form>
+</div>
+
+<script type="text/javascript">
+    function downloadFile()
+    {
+        var x = document.getElementById("fileName");
+        var string = x.value + ".tar.gz";
+        window.open(string);
+    }
+</script>
+
+</body>
+</html>
+
+
+
+

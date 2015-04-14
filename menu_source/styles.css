@@ -1,0 +1,378 @@
+#cssmenu ul {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 200px;
+  background-color: #FFF;
+  font-size: 25px;
+  height: 70px;
+  position: fixed;
+  font-family: HelveticaNeue-Thin, Roboto, Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  border-bottom-style:solid;
+border-bottom-width:5px;
+border-bottom-color: #55ACEE;
+}
+
+#cssmenu li#title{
+    font-family: HelveticaNeue-UltraLight, Roboto, HelveticaNeue-Light, Helvetica, Arial;
+    color: #FFF;
+    background-color: #FFF;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    width: 20%;
+    min-width: 20%;
+    display: block;
+    padding: 0;
+    float: left;
+    padding: 0 auto;
+    height: 70px;
+
+}
+
+#cssmenu li#tab1, #tab2, #tab3, #tab4 {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  width: auto;
+  height: 70px;
+  padding: 0;
+  text-align: center;
+  left: 0px;
+  bottom: 2px;
+}
+#cssmenu li a {
+  float: left;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  height: 100%;
+  text-align: center;
+  padding: 9px 15px 0;
+  font-weight: normal;
+}
+#cssmenu li a:hover,
+#cssmenu .active {
+  color: #000;
+  background-color: #FFF;
+  text-decoration: none;
+}
+#cssmenu .active a {
+  color: #fff;
+  font-weight: 300;
+}
+#cssmenu li#tab1, #tab2, #tab3, #tab4 {
+  background-color: #FFF;
+}
+#cssmenu li a:hover,
+#cssmenu li.active {
+  background-color: #55ACEE;
+  color: #FFF;
+  font-weight: 500;
+}
+
+
+body {
+	font: 100%/1.4 HelveticaNeue-Light, Roboto, Verdana, Arial, sans-serif;
+	background: #EEE;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+    font-family: HelveticaNeue-UltraLight, Roboto, Helvetica, Arial, sans-serif;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+    color: #55ACEE;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 1100px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	padding-left:0px;
+	height:10%;
+	width:100%;
+	min-width:900px;
+}
+
+/* ~~ This is the layout information. ~~
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	height:100%;
+    color:#FFF;
+    overflow: hidden;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: #CCC49F;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clepxr:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.subtitle
+{
+	padding-left:5em;
+	line-height:0px;
+	padding-top:0px;
+	margin-top:0px;
+	width:80%;
+	font-family:"HelveticaNeue-UltraLight", "Roboto";
+}​​
+
+.containerer{
+	height:auto;
+	overflow:hidden;
+}
+
+#container3 {
+	clear:left;
+	float:none;
+	width:100%;
+	background-color:#4f4f4f;
+	overflow:hidden;
+	margin:0 auto;
+	display:block;
+	min-width:900px;
+
+}
+#container2 {
+	clear:left;
+	float:left;
+	width:100%;
+	position:relative;
+	right:33.333%;
+}
+#container1 {
+	float:left;
+	width:100%;
+	position:relative;
+	right:33.33%;
+}
+#col1 {
+	float:left;
+	width:50%;
+	position:relative;
+	left:68.67%;
+	background-color:#4f4f4f;
+	overflow:hidden;
+}
+#col2 {
+	float:left;
+	width:29.33%;
+	position:relative;
+	left:72.67%;
+	padding-top:20px;
+	padding-left:20px;
+	padding-right:20px;
+	overflow:hidden;
+}
+#col3 {
+	float:left;
+	width:29.33%;
+	position:relative;
+	left:76.67%;
+	overflow:hidden;
+}
+
+#insideContent{
+	margin:0 auto;
+    margin-left: 0px;
+	width:100%;
+	min-width:900px;
+	background-color:#FFF;
+	font-family: HelveticaNeue-Light, Roboto, Arial, Helvetica, sans-serif;
+	color:#000;
+	height:100%;
+}
+
+p#contentPara{
+	padding-left:15%;
+	margin-right:15%;
+	font-family:"HelveticaNeue-Light", "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size:20px;
+  overflow: visible;
+}
+
+ol#contentPara{
+    padding-left: 15%;
+    margin-right: :15%;
+    font-family:"HelveticaNeue-Light", "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size:20px;
+    overflow: visible;
+}
+
+ul#contentPara{
+    padding-left: 50px;
+    margin-right: :15%;
+    font-family:"HelveticaNeue-Light", "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size:20px;
+}
+
+li{
+    margin-right: 15%;
+}
+
+.largeDiv
+{
+    width: 70%;
+    float: center;
+    background-color: #FFF;
+    display: inline-block;
+   /* margin: 0 auto;*/
+    overflow: hidden;
+    clear: none;
+}
+
+#container {
+    margin-top: 80px;
+    width:100%;
+}
+#left_column {
+    padding-left: 20px;
+    float:left;
+    width:60%;
+}
+#right_column {
+    float:left;
+    width:30%;
+}
+
+li#share a:hover{
+    background-color: #FFF;
+}
+
+li#share{
+    right: 10px;
+    width: auto;
+    height: 60px;
+    display: block;
+    padding: 0;
+    float: right;
+    width: 48px;
+}
+
+button{
+    background-color: #55ACEE;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    color: #FFF;
+    font-family: HelveticaNeue-UltraLight, Roboto, Helvetica, Arial;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px;
+}
+
+button:hover{
+    background-color: #72A1EE;
+}
+
+blue{
+    color: #55ACEE;
+}
+
+.shareLink{
+    opacity: 0.5;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   float: right;
+}
+   .shareLink:hover {
+      opacity: 1;
+      }
+div#sharingDiv{
+    margin-right: 15%;
+}
+
+div#followDiv div, a, iframe, span{
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+#followDiv{
+    margin-top: 100px;
+    float: left;
+    width: 14%;
+    margin-right: 1%;
+    margin-left: 1%;
+    text-align: center;
+    height: 200px;
+    background-color: #FFF;
+}
+.anchor{
+  display: block;
+  height: 115px; <!--same height as header-->
+  margin-top: -115px; <!--same height as header-->
+  visibility: hidden;
+}-->
+
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+  padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;}
+
+/*Opera Fix*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/
+}
+

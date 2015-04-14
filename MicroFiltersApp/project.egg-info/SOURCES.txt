@@ -1,0 +1,12 @@
+setup.py
+MicroFiltersApp/__init__.py
+MicroFiltersApp/items.py
+MicroFiltersApp/pipelines.py
+MicroFiltersApp/settings.py
+MicroFiltersApp/spiders/__init__.py
+MicroFiltersApp/spiders/microfiltersapp_spider.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+2014-10-01 15:42:01-0400 [scrapy] INFO: Scrapy 0.20.2 started (bot: MicroFiltersApp)
+2014-10-01 15:42:01-0400 [scrapy] DEBUG: Optional features available: ssl, http11
+2014-10-01 15:42:01-0400 [scrapy] DEBUG: Overridden settings: {'NEWSPIDER_MODULE': 'MicroFiltersApp.spiders', 'FEED_URI': 'items/default/MicroFiltersApp/fff91c7249a211e491db00144f3ff0d4.jl', 'SPIDER_MODULES': ['MicroFiltersApp.spiders'], 'BOT_NAME': 'MicroFiltersApp', 'USER_AGENT': 'MicroFiltersApp (+http://cs.uwaterloo.ca/~msmarzouk/Andrew/)', 'LOG_FILE': 'logs/default/MicroFiltersApp/fff91c7249a211e491db00144f3ff0d4.log'}
+2014-10-01 15:42:01-0400 [scrapy] DEBUG: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2014-10-01 15:42:01-0400 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2014-10-01 15:42:01-0400 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2014-10-01 15:42:01-0400 [scrapy] DEBUG: Enabled item pipelines: MicrofilterAppImagesPipeline
+2014-10-01 15:42:01-0400 [MicroFiltersApp] INFO: Spider opened
+2014-10-01 15:42:01-0400 [MicroFiltersApp] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2014-10-01 15:42:01-0400 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2014-10-01 15:42:01-0400 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2014-10-01 15:42:01-0400 [MicroFiltersApp] INFO: Closing spider (finished)
+2014-10-01 15:42:01-0400 [MicroFiltersApp] INFO: Dumping Scrapy stats:
+	{'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2014, 10, 1, 19, 42, 1, 461887),
+	 'log_count/DEBUG': 6,
+	 'log_count/INFO': 3,
+	 'start_time': datetime.datetime(2014, 10, 1, 19, 42, 1, 458686)}
+2014-10-01 15:42:01-0400 [MicroFiltersApp] INFO: Spider closed (finished)

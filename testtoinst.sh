@@ -1,0 +1,1 @@
+curl localhost:6800/schedule.json -d project=default -d spider=MicroFiltersApp -d setting=IMAGES_STORE='../TARS/54d0030c06fa3/' -d FP='../files/hi.csv' -d FP2='../files/hi.txt' -d ID=54d0030c06fa3 -d SIZES='SML' -d RT=n -d D=y -d ENG=y -d VID=n -d SORT=n
