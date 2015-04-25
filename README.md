@@ -6,3 +6,6 @@ MicroFilters is a disaster management system recently published in the IEEE Glob
 #Note
 
 This is the first release of the MicroFilters platform, and as such, it is quite unpolished. Polishing and refining the project will be done over the following weeks and months.
+
+#Liscence
+This code/software is free to use or edit, but I'd really appreciate it if attribution was given.
